@@ -24,7 +24,7 @@ h2 {
 
 nav ul {
     list-style-type: none;
-    margin: 0;
+    margin: -10px;
     padding: 0;
     overflow: hidden;
     background-color: rgb(32, 204, 110);
@@ -48,6 +48,7 @@ aside ol {
     border: 3px solid black;
     padding: 10px 30px;
     font-size: 12pt;
+    z-index: 1;
 }
 
 aside ol li {
@@ -73,6 +74,10 @@ figure img {
     border-radius: 5px;
 }
 
+figure {
+    position: relative;
+}
+
 table, th, td {
     border: 2px solid black;
     text-align: center;
@@ -86,22 +91,34 @@ table {
     background-size: cover;
 }
 
-.maine_coon_table {
+.stat_table {
     position: absolute;
-    right: 250px;
-    top: 550px;
+    right: 280px;
+    top: 110px;
 }
 
-.bengal_table {
+figcaption {
     position: absolute;
-    right: 250px;
-    top: 1200px;
+    top: 435px;
+    left: 10px;
 }
 
-.scottish_fold_table {
+.scottishfoldbottom {
     position: absolute;
-    right: 250px;
-    top: 1880px;
+    top: 535px;
+    left: 10px;
+}
+
+article {
+    position: relative;
+}
+
+footer {
+    border-top: 1pt solid black;
+}
+
+footer p {
+    font-size: 10pt;
 }
 
 a:link {
@@ -113,7 +130,7 @@ a:visited {
     color: darkred;
 }
 
-a:hover:not(.cat) {
+a:hover:not(.cat,.natgeo) {
     background-color: white;
     padding: 21px 0;
 }
