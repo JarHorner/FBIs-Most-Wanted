@@ -39,11 +39,11 @@ figure {
 table, th, td {
     border: 2px solid black;
     text-align: center;
-    width: 300px;
-    height: 25px;
+    width: 380px;
+    height: 50px;
 }
 
-.stat_table {
+.crimes_table {
     position: absolute;
     right: 280px;
     top: 50px;

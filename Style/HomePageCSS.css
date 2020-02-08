@@ -2,3 +2,16 @@ a.current:link {
     background-color: lightgreen;
     padding: 21px 0;
 }
+
+p img {
+    float: right;
+}
+
+h1 {
+    color: brown;
+    font-size: 26pt;
+}
+
+span {
+    font-size: 9pt;
+}
