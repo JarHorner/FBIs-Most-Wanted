@@ -1,44 +1,3 @@
-html {
-    background-color: lightblue;
-}
-
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-h1 {
-    font-size: 36pt;
-    color: brown;
-}
-
-h1 img {
-    position: absolute;
-    z-index: -1;
-    opacity: 0.5;
-}
-
-h2 {
-    font-size: 26pt;
-    color: brown;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: -10px;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(32, 204, 110);
-    font-size: 14pt;
-}
-
-nav li {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 20px 100px;
-}
-
 aside ol {
     position: fixed;
     text-align: center;
@@ -110,32 +69,12 @@ tr:nth-child(even) {
     background-color: lightgrey;
 }
 
-a:link {
-    color: purple;
-}
-
-a:visited {
-    color: darkred;
-}
-
-a:hover:not(.cat) {
-    background-color: white;
-    padding: 21px 0;
-}
-
-a:active {
-    color: blueviolet;
-}
-
 section p::first-letter {
     font-size: 20pt;
     color: brown;
 }
 
-footer {
-    border-top: 2pt solid black;
-}
-
-footer p {
-    font-size: 10pt;
+a.current:link {
+    background-color: lightgreen;
+    padding: 21px 0;
 }
