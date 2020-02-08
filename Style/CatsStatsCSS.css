@@ -48,7 +48,6 @@ aside ol {
     border: 3px solid black;
     padding: 10px 30px;
     font-size: 12pt;
-    z-index: 1;
 }
 
 aside ol li {
@@ -85,16 +84,10 @@ table, th, td {
     height: 25px;
 }
 
-table {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../AnimalShowdown/Images/Cartoon_Cat.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .stat_table {
     position: absolute;
     right: 280px;
-    top: 110px;
+    top: 50px;
 }
 
 figcaption {
@@ -113,12 +106,8 @@ article {
     position: relative;
 }
 
-footer {
-    border-top: 1pt solid black;
-}
-
-footer p {
-    font-size: 10pt;
+tr:nth-child(even) {
+    background-color: lightgrey;
 }
 
 a:link {
@@ -130,11 +119,24 @@ a:visited {
     color: darkred;
 }
 
-a:hover:not(.cat,.natgeo) {
+a:hover:not(.cat) {
     background-color: white;
     padding: 21px 0;
 }
 
 a:active {
     color: blueviolet;
+}
+
+section p::first-letter {
+    font-size: 20pt;
+    color: brown;
+}
+
+footer {
+    border-top: 2pt solid black;
+}
+
+footer p {
+    font-size: 10pt;
 }
