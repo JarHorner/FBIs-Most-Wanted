@@ -22,7 +22,7 @@ h3 {
     font-size: 24pt;
 }
 
-h1,h2, h3 {
+h1,h2,h3 {
     color: rgb(255, 255, 0);
 }
 
@@ -50,11 +50,11 @@ nav li {
 }
 
 a:visited {
-    color: purple;
+    color: rgb(83, 10, 83);
 }
 
 a:link {
-    color: blue;
+    color: rgb(151, 220, 243);
 }
 
 a:hover:not(.cat,.dog) {
@@ -66,19 +66,20 @@ a:active {
     color: black;
 }
 
-footer {
-    border-top: 2pt solid black;
-}
-
 footer p {
     font-size: 10pt;
     color: yellow;
 }
-header, footer {
+header {
     background-color:#041d6e;
 }
 
+footer {
+    background-color: rgb(164, 165, 165);
+    border-top: 2pt solid #041d6e;
+}
+
 a.current:link {
-    background-color: lightgreen;
+    background-color: lightgrey;
     padding: 21px 0;
 }

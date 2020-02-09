@@ -5,6 +5,7 @@ aside {
     top: 250px;
     right: 30px;
     border: 3px solid black;
+    background-color: rgb(164, 165, 165);
     padding: 10px 30px;
     font-size: 12pt;
     z-index: 1;
@@ -14,18 +15,22 @@ aside ol li {
     margin: 10px 0;
 }
 
-header, footer {
-    color:rgb(255, 255, 0);
-    background-color: #041d6e;
+th {
+    font-size: 14pt;
 }
 
-h1, h2 {
-    font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+table, th, td {
+    border: 2px solid black;
+    text-align: center;
+    width: 380px;
+    height: 60px;
 }
-body {
-    font-family: Georgia, Cambria, "Times New Roman", serif;
+
+tr:nth-child(even) {
+    background-color: lightgrey;
 }
-#reviews {
-    border-bottom: solid 3pt #041d6e;
-    color: rgb(255, 255, 0);
+
+section p::first-letter {
+    font-size: 20pt;
+    color: #041d6e;
 }
