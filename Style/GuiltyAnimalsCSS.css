@@ -6,12 +6,23 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+p {
+    font-size: 13pt;
+}
+
 header h1 {
     font-size: 36pt;
-    color: brown;
 }
 
 h2 {
+    font-size: 16pt;
+}
+
+h3 {
+    font-size: 24pt;
+}
+
+h1,h2, h3 {
     color: brown;
 }
 

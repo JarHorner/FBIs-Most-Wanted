@@ -7,11 +7,25 @@ p img {
     float: right;
 }
 
-h1 {
-    color: brown;
-    font-size: 26pt;
+div {
+    font-size: 9pt;
 }
 
-span {
-    font-size: 9pt;
+textarea {
+    resize: none;
+}
+
+form {
+    font-size: 14pt;
+    border: 1px solid black;
+    padding: 15px;
+
+}
+
+p input#login {
+    margin: 0 0 0 40px;
+}
+
+#reset {
+    margin: 0 0 0 100px;
 }
