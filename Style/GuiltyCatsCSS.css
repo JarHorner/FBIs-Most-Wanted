@@ -16,7 +16,7 @@ aside ol li {
 
 caption {
     font-size: 18pt;
-    color: brown;
+    color: #041d6e;
 }
 
 th {
@@ -68,5 +68,15 @@ tr:nth-child(even) {
 
 section p::first-letter {
     font-size: 20pt;
+    color: #041d6e;
+}
+
+a.current:link {
+    background-color: lightyellow;
+    padding: 21px 0;
+}
+#reviews {
+    border-bottom: solid 3pt #041d6e;
+    color: rgb(255, 255, 0);
     color: brown;
 }

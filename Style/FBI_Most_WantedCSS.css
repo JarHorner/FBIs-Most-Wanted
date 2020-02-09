@@ -1,5 +1,5 @@
 html {
-    background-color: lightblue;
+    background-color: white;
 }
 
 * {
@@ -23,7 +23,7 @@ h3 {
 }
 
 h1,h2, h3 {
-    color: brown;
+    color: rgb(255, 255, 0);
 }
 
 h1 img {
@@ -37,7 +37,7 @@ nav ul {
     margin: -10px;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(32, 204, 110);
+    background-color: rgb(164, 165, 165);
     font-size: 14pt;
 }
 
@@ -50,11 +50,11 @@ nav li {
 }
 
 a:visited {
-    color: darkred;
+    color: purple;
 }
 
 a:link {
-    color: yellow;
+    color: blue;
 }
 
 a:hover:not(.cat,.dog) {
@@ -72,6 +72,10 @@ footer {
 
 footer p {
     font-size: 10pt;
+    color: yellow;
+}
+header, footer {
+    background-color:#041d6e;
 }
 
 a.current:link {
