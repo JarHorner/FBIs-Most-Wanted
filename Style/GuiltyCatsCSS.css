@@ -70,8 +70,3 @@ section p::first-letter {
     font-size: 20pt;
     color: brown;
 }
-
-a.current:link {
-    background-color: lightgreen;
-    padding: 21px 0;
-}

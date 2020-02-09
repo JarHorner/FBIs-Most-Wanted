@@ -57,7 +57,7 @@ a:link {
     color: yellow;
 }
 
-a:hover:not(.cat) {
+a:hover:not(.cat,.dog) {
     background-color: white;
     padding: 21px 0;
 }
@@ -72,4 +72,9 @@ footer {
 
 footer p {
     font-size: 10pt;
+}
+
+a.current:link {
+    background-color: lightgreen;
+    padding: 21px 0;
 }
