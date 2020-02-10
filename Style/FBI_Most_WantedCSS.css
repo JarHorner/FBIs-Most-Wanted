@@ -22,9 +22,10 @@ h2 {
 
 h3 {
     font-size: 24pt;
+    color: black;
 }
 
-h1,h2,h3 {
+h1,h2 {
     color: rgb(255, 255, 0);
 }
 
@@ -73,6 +74,7 @@ footer p {
 }
 header {
     background-color:#041d6e;
+    position: relative;
 }
 
 footer {
@@ -85,7 +87,11 @@ a.current:link {
     padding: 21px 0;
 }
 
-section p::first-letter {
+section p#about::first-letter {
     font-size: 20pt;
     color: #041d6e;
+}
+
+a[target="_blank"] {
+    color: rgb(21, 190, 15);
 }

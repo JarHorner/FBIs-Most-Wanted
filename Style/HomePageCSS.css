@@ -1,5 +1,9 @@
-p img {
+figure {
     float: right;
+}
+
+figcaption {
+    font-size: 8pt;
 }
 
 div {
