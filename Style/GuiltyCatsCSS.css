@@ -29,13 +29,3 @@ table, th, td {
 tr:nth-child(even) {
     background-color: lightgrey;
 }
-
-section p::first-letter {
-    font-size: 20pt;
-    color: #041d6e;
-}
-
-a.current:link {
-    background-color: lightyellow;
-    padding: 21px 0;
-}

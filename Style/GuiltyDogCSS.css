@@ -29,8 +29,3 @@ table, th, td {
 tr:nth-child(even) {
     background-color: lightgrey;
 }
-
-section p::first-letter {
-    font-size: 20pt;
-    color: #041d6e;
-}
