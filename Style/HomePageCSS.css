@@ -1,0 +1,34 @@
+figure {
+    float: right;
+}
+
+figcaption {
+    font-size: 8pt;
+}
+
+div {
+    font-size: 9pt;
+}
+
+textarea {
+    resize: none;
+}
+
+form {
+    font-size: 14pt;
+    border: 1px solid black;
+    padding: 15px;
+
+}
+
+p input#login {
+    margin: 0 0 0 40px;
+}
+
+#reset {
+    margin: 0 0 0 100px;
+}
+
+section article h2 {
+    color: black;
+}
