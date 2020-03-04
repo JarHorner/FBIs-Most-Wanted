@@ -8,59 +8,62 @@
     <meta name="author" content="Brett Nakonechny">
     <meta name="author" content="Jarret Horner">
     <meta charset="UTF-8">
-    <link rel="icon" type="image/jpg" href="/Images/FBI_Logo.png">
-    <link rel="stylesheet" type="text/css" href="/Style/GuiltyCatsCSS.css">
-    <link rel="stylesheet" type="text/css" href="/Style/FBI_Most_WantedCSS.css">
+    <link rel="icon" type="image/jpg" href="./Images/FBI_Logo.png">
+    <link rel="stylesheet" type="text/css" href="./Style/GuiltyCatsCSS.css">
+    <link rel="stylesheet" type="text/css" href="./Style/FBI_Most_WantedCSS.css">
 </head>
 
 <body>
     <header>
-        <h1><img src="/Images/FBI_Seal.png" alt="FBI Seal" width="180" height="80"/>&emsp;FBI Most Wanted</h1>
 
-        <nav>       <!--navigation hub for links accross website-->
-            <ul>         
-                 <li><a href="HomePage.html">Home Page </a></li>
-                 <li><a href="GuiltyCats.html" class="current">Guilty Cats</a></li>
-                <li><a href="GuiltyDogs.html">Guilty Dogs</a></li>
-                 <li><a href="Contact.html" class="nohover">Contact</a></li>
-                <li><a href="About.html" class="nohover">About</a></li>
-            </ul>       
-        </nav>      <!--end navigation hub for links accross website-->
+        <nav class="dropdown"> 
+            <button class="dropdown-button">Other Pages</button> 
+            <div class="dropdown-content">
+                <a href="HomePage.html">Home Page </a>
+                <a href="GuiltyCats.html" class="current">Guilty Cats</a>
+                <a href="GuiltyDogs.html">Guilty Dogs</a>
+            </div>      
+        </nav>
+
+        <img src="./Images/FBI_Seal.png" alt="FBI Seal" width="300" height="150" />
+     
     </header>
 
-    <aside>         <!--menu for link in same page-->
-        <h2>Navigation Menu</h2>  
-        <ol>  
-            <li><a href="#christmas" class="nohover">Kitty Christmas</a></li>
-            <li><a href="#buttersworth" class="nohover">Mr. Buttersworth</a></li>
-            <li><a href="#tunacan" class="nohover">Katie Tunacan</a></li>
-        </ol>       
-    </aside>        <!--end menu for link in same page-->
-
     <main>
-        <section>       <!--description of what the page contains-->
-            <p id="about">
-                Here are just a few of the many felines who got their paws and claws dirty recently, with details on the crimes they had commited!
-                <br>Each cats has a picture of themselves for better recognization, along with their details, such as nicknames, charges, last known location, reward, etc. 
-                so you can help catch these rotten criminals. 
-                <br>For more information on crimes in the area, visit  <a href="https://calgarycrimestoppers.org/" target="_blank" class="cat">Crime Stoppers.</a>
-            </p>
-        </section>      <!--end description of what the page contains-->
+        <section class="information">
+            <div class="title"> 
 
-        <section>       <!--information on one cat-->
+                <h1>FBIs Most Wanted</h1>
+
+            </div>
+
+            <div class="page-info">
+                <p id="about">
+                    Here are just a few of the many Felines who got their paws dirty!
+                    <br>Each cat has a picture of themselves for better recognization, along with details.
+                    <br>For more information, visit  <a href="https://calgarycrimestoppers.org/" target="_blank" class="cat">Crime Stoppers.</a>
+                </p>
+            </div>
+
+            <div class="guiltyanimals">
+                <img src="./images/guiltydog&cat.bmp" alt="guilty-looking cat and dog" title="guilty-looking animals" />
+            </div>
+        </section>      
+
+        <section>       
             <article>
                 <br><br><br><br><h3 id="christmas">Suspect #1</h3>
                 <table>
                     <thead>
                         <tr>
                             <th colspan="2">
-                                <img src="/Images/santa.jpg" alt="guilty orange tabby cat" title="Guilty Orange Tabby Cat" width="250" height="300" />
+                                <img src="./Images/santa.jpg" alt="guilty orange tabby cat" title="Guilty Orange Tabby Cat" width="250" height="300" />
                             </th>
                     
                             <th colspan="2">
                                 <strong>Kitty Christmas</strong><br>
                                 Infamous present thief<br>
-                                <img src="/Images/FBI_Logo.png" alt="FBI logo" width="300" height="200"/>
+                                <img src="./Images/FBI_Logo.png" alt="FBI logo" width="300" height="200"/>
                             </th>
                         </tr>
                         <tr>
@@ -95,13 +98,13 @@
                     <thead>
                         <tr>
                             <th colspan="2">
-                                <img src="/Images/smartasscat.png" alt="guilty grey tabby cat" title="Guilty Grey Taby Cat" width="250" height="300" />
+                                <img src="./Images/smartasscat.png" alt="guilty grey tabby cat" title="Guilty Grey Taby Cat" width="250" height="300" />
                             </th>
                     
                             <th colspan="2">
                                 <strong>Mr. Buttersworth</strong><br>
                                 Professional Comedian<br>
-                                <img src="/Images/FBI_Logo.png" alt="FBI logo" width="300" height="200"/>
+                                <img src="./Images/FBI_Logo.png" alt="FBI logo" width="300" height="200"/>
                             </th>
                         </tr>
                         <tr>
@@ -136,13 +139,13 @@
                     <thead>
                         <tr>
                             <th colspan="2">
-                                <img src="/Images/blackandwhite.jpg" alt="guilty bicolor cat" title="Guilty Bicolor Cat" width="250" height="300" />
+                                <img src="./Images/blackandwhite.jpg" alt="guilty bicolor cat" title="Guilty Bicolor Cat" width="250" height="300" />
                             </th>
                     
                             <th colspan="2">
                                 <strong>Katie Tunacan</strong><br>
                                 Shoelace thief<br>
-                                <img src="/Images/FBI_Logo.png" alt="FBI logo" width="300" height="200"/>
+                                <img src="./Images/FBI_Logo.png" alt="FBI logo" width="300" height="200"/>
                             </th>
                         </tr>
                         <tr>

@@ -2,6 +2,12 @@ html {
     background-color: white;
 }
 
+body {
+    display: grid;
+    grid-template-rows: repeat(6,auto);
+    grid-gap: 1.5em;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -10,10 +16,72 @@ p {
     font-size: 13pt;
 }
 
-header h1 {
-    font-size: 36pt;
-    position: relative;
-    left: 50px;
+header {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, auto) 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+header img {
+    grid-column-start: 2;
+    margin: 0.8em;
+}
+
+.dropdown-button {
+    background-color: lightgrey;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    margin-right: auto;
+    padding: 1em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+} 
+
+.information {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-rows: auto auto auto;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.page-info {
+    margin-top: -2em;
+    display: flex;
+    justify-content: center;
+}
+
+.guiltyanimals {
+    display: flex;
+    justify-content: center;
+    opacity: 0.5;
+}
+
+h1 {
+    font-size: 3em;
 }
 
 h2 {
@@ -26,29 +94,11 @@ h3 {
 }
 
 h1,h2 {
-    color: rgb(255, 255, 0);
+    color: rgb(22, 59, 20);
 }
 
-h1 img {
-    position: absolute;
-    left: -100px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: -10px;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(164, 165, 165);
-    font-size: 14pt;
-}
-
-nav li {
-    float: left;
-    display: block;
-    color: black;
+nav div a {
     text-align: center;
-    padding: 20px 100px;
 }
 
 a:visited {
@@ -56,12 +106,7 @@ a:visited {
 }
 
 a:link {
-    color: rgb(151, 220, 243);
-}
-
-a:hover:not(.nohover) {
-    background-color: white;
-    padding: 21px 0;
+    color: rgb(65, 140, 165);
 }
 
 a:active {
@@ -69,9 +114,12 @@ a:active {
 }
 
 footer p {
+    display: flex;
+    justify-content: center;
     font-size: 10pt;
     color: yellow;
 }
+
 header {
     background-color:#041d6e;
     position: relative;
@@ -82,9 +130,20 @@ footer {
     border-top: 2pt solid #041d6e;
 }
 
-a.current:link {
-    background-color: lightgrey;
-    padding: 21px 0;
+.guiltyanimals:hover {
+    opacity: 1;
+}
+
+.dropdown-content a:hover {
+    background-color: darkgrey;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
 
 section p#about::first-letter {

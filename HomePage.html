@@ -8,40 +8,44 @@
     <meta name="author" content="Brett Nakonechny">
     <meta name="author" content="Jarret Horner">
     <meta charset="UTF-8">
-    <link rel="icon" type="image/jpg" href="/Images/FBI_Logo.png">
-    <link rel="stylesheet" type="text/css" href="/Style/HomePageCSS.css">
-    <link rel="stylesheet" type="text/css" href="/Style/FBI_Most_WantedCSS.css">
+    <link rel="icon" type="image/jpg" href="./Images/FBI_Logo.png">
+    <link rel="stylesheet" type="text/css" href="./Style/HomePageCSS.css">
+    <link rel="stylesheet" type="text/css" href="./Style/FBI_Most_WantedCSS.css">
 </head>
 
 <body>
     <header>
-         <h1><img src="/Images/FBI_Seal.png" alt="FBI Seal" width="180" height="80"/>&emsp;FBI Most Wanted</h1>
-    
-        <nav>           <!--navigation hub for links accross website-->
-            <ul>         
-                <li><a href="HomePage.html" class="current">Home Page </a></li>
-                <li><a href="GuiltyCats.html">Guilty Cats</a></li>
-                <li><a href="GuiltyDogs.html">Guilty Dogs</a></li>
-                <li><a href="Contact.html" class="nohover">Contact</a></li>
-                <li><a href="About.html" class="nohover">About</a></li>
-            </ul>       
-        </nav>          <!--end navigation hub for links accross website-->
+
+        <nav class="dropdown"> <!--navigation hub for links accross website--> 
+            <button class="dropdown-button">Other Pages</button> 
+            <div class="dropdown-content">
+                <a href="HomePage.html">Home Page </a>
+                <a href="GuiltyCats.html" class="current">Guilty Cats</a>
+                <a href="GuiltyDogs.html">Guilty Dogs</a>
+            </div>      
+        </nav>
+
+        <img src="./Images/FBI_Seal.png" alt="FBI Seal" width="300" height="150" />
+     
     </header>
 
     <main>
-        <section>       <!--description of website-->
-                <figure>
-                    <img src="/Images/CatvsDog.jpg" alt="suspicious cat and dog" title="Cat and Dog" width="180" height="180"/>
-                    <figcaption>suspicious cat and dog</figcaption>
-                </figure>
-            <p id="about">
-                FBI Most Wanted are looking for cats and dogs that have commit some of the most heinous crimes! every month we select the most wanted of each species of
-                cat and dog, setting up a system where people can send in tips of information they may have of the wanted. We also have information about the perpertrators
-                so you may be able to find them yourselves. On this page you can sign up for a free account, so you can interact with us or other users and help catch these misfits.
-                Any rude or explicit comments to us or other users we take seriously, and will result in the banning of your account. 
-            </p>
+        <section class="information">
+            <div class="title"> 
 
-        </section>      <!--end description of website-->
+                <h1>FBIs Most Wanted</h1>
+
+            </div>
+
+            <div class="page-info">
+                <p id="about">
+                    FBI Most Wanted are looking for cats and dogs that have committed heinous crimes! 
+                <br> we set up a system where people can send in tips of information they have of the wanted.
+                <br> You can sign up for a free account, so you can interact with  other users and help catch these misfits.
+                </p>
+            </div>
+            
+        </section> 
 
         <section>
             <article>   <!--Form to create a website account-->
