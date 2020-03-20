@@ -8,174 +8,179 @@
     <meta name="author" content="Brett Nakonechny">
     <meta name="author" content="Jarret Horner">
     <title>FBI Most Wanted - Dogs</title>
-    <link rel="icon" type="image/jpg" href="/Images/FBI_Logo.png">
-    <link rel="stylesheet" type="text/css" href="/Style/FBI_Most_WantedCSS.css" />
-    <link rel="stylesheet" type="text/css" href="/Style/GuiltyDogCSS.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="./Images/FBI_Logo.png">
+    <link rel="stylesheet" type="text/css" href="./Style/FBI_Most_WantedCSS.css" />
 
 </head>
 
 <body>
+    <div class="container">
+
     <header>
-         <h1><img src="/Images/FBI_Seal.png" alt="FBI Seal" width="180" height="80"/>&emsp;FBI Most Wanted</h1>
-           
-        <nav>           <!--navigation hub for links accross website-->
-            <ul>         
-                <li><a href="HomePage.html">Home Page </a></li>
-                <li><a href="GuiltyCats.html">Guilty Cats</a></li>
-                <li><a href="GuiltyDogs.html" class="current">Guilty Dogs</a></li>
-                <li><a href="Contact.html" class="nohover">Contact</a></li>
-                <li><a href="About.html" class="nohover">About</a></li>
-            </ul>       
-        </nav>          <!--end navigation hub for links accross website-->
+
+        <nav class="dropdown"> <!--navigation hub for links accross website--> 
+            <button class="dropdown-button">Other Pages</button> 
+            <div class="dropdown-content">
+                <a href="HomePage.html">Home Page </a>
+                <a href="GuiltyCats.html" class="current">Guilty Cats</a>
+                <a href="GuiltyDogs.html">Guilty Dogs</a>
+            </div>      
+        </nav>
+
+        <img src="./Images/FBI_Seal.png" alt="FBI Seal" width="300" height="150" />
+     
     </header>
 
-    <aside>         <!--menu for link in same page-->
-        <h2>Navigation Menu</h2>  
-        <ol>  
-            <li><a href="#french_capone" class="nohover">French Capone</a></li>
-            <li><a href="#jack_pacino" class="nohover">Jack Pacino</a></li>
-            <li><a href="#dash_gotti" class="nohover">Dash Gotti</a></li>
-        </ol>       
-    </aside>        <!--end menu for link in same page-->
+    
+    <section id="part2" class="information"> <!--Basic info of page-->
+        <div class="title"> 
+
+            <h1>FBIs Most Wanted</h1>
+
+        </div>
+
+        <div class="page-info">
+            <p id="about">
+                Here are just a few of the many Canines who got their paws dirty!
+                <br>Each dog has a picture of themselves for better recognization, along with details. 
+                <br>For more information, visit <a href="https://calgarycrimestoppers.org/" target="_blank" class="dog">Crime Stoppers.</a>
+            </p>
+        </div>
+
+        <div class="guiltyanimals">
+            <img src="./images/guiltydog&cat.bmp" alt="guilty-looking cat and dog" title="guilty-looking animals" />
+        </div>
+
+    </section> 
+
+    <div id="part3">
+        <h3>Suspects</h3>
+    </div>
 
     <main>
-        <section>       <!--description of what the page contains-->
-            <p id="about">
-                Here are just a few of the many canines who got their paws and claws dirty recently, with details on the crimes they had commited!
-                <br>Each dog has a picture of themselves for better recognization, along with their details, such as nicknames, charges, last known location, reward, etc.
-                so you can help catch these rotten criminals. 
-                <br>For more information on crimes in the area, visit <a href="https://calgarycrimestoppers.org/" target="_blank" class="dog">Crime Stoppers.</a>
-            </p>
-        </section>      <!--end description of what the page contains-->
+        <section id="part4"> <!--Dog suspect 1-->
+            <article class="suspects">
 
-        <section>       <!--information on one dog-->
-            <article>
-                <br><br><br><br><h3>Suspect #1</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2">
-                                <img src="/Images/frenchie.jpg" alt="guilty french bulldog" title="Guilty French Bulldog" width="250" height="300" id="french_capone"/>
-                            </th>
+                <div class="suspectname">
+                    <b>Name: &nbsp;</b><br>
+                    French Capone &nbsp;&nbsp;
+                    <br><b>Nickname: &nbsp;</b><br>
+                    "Frenchie"
+                </div>
 
-                            <th colspan="2">
-                                <strong>French Capone</strong><br>
-                                Boss of the Capone Family<br>
-                                <img src="/Images/FBI_Logo.png" alt="FBI logo" width="300" height="200"/>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>Height: 1 ft</th>
-                            <th>Weight: 15 lbs.</th>
-                            <th>Breed:</th>
-                            <th>French Bulldog</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>Nickname(s):</th>
-                            <td>"Frenchie"</td>
-                            <th>Charges:</th>
-                            <td>Public urination</td>
-                        </tr>
-                        <tr>
-                            <th>Known Locations:</th>
-                            <td>Griffiths Woods</td>
-                            <th>Reward:</th>
-                            <td>$10,000,000</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="suspectpic">
+                    <img src="./Images/frenchie.jpg" alt="guilty french bulldog" title="French Capone" width=320 height=350 media="(max-width:500px)(mid-width:500px)(min-width:1000px)"/>
+                </div>
+
+                <div class="suspectinfo">
+                    <b>Breed:</b>
+                    French Bulldog
+                    <br><br><b>Charges:</b>
+                    Public Urination
+                    <br><br><b>Height:</b>
+                    1 ft
+                    <br><br><b>Weight:</b>
+                    15 lbs.
+                    <br><br><b>Known Locations:</b>
+                    Griffith Woods
+                    <br><br><b>Reward:</b>
+                    $10,000,000
+                </div>
+
             </article>
-        </section>      <!--end information on one dog-->
+        </section>
 
-        <section>       <!--information on second dog-->
-            <article>
-                <br><br><br><br><h3>Suspect #2</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2">
-                                <img src="/Images/jack.jpg" alt="guilty jack russel" title="Guilty Jack Russel" width="250" height="300" id="jack_pacino"/>
-                            </th>
-    
-                             <th colspan="2">
-                                <strong>Jack Pacino</strong><br>
-                                Boss of the Pacino Family<br>
-                                <img src="/Images/FBI_Logo.png" alt="FBI logo" width="300" height="200"/>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>Height: 0.8 ft</th>
-                            <th>Weight: 12 lbs.</th>
-                            <th>Breed:</th>
-                            <th>Jack Russell</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>Nickname(s):</th>
-                            <td>"Jacky"</td>
-                            <th>Charges:</th>
-                            <td>Public pooping</td>
-                        </tr>
-                        <tr>
-                            <th>Known Locations:</th>
-                            <td>4th Street</td>
-                            <th>Reward:</th>
-                            <td>$7,000,000</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <section id="part5"> <!--Dog suspect 2-->
+            <article class="suspects">
+
+                <div class="suspectname">
+                    <b>Name: &nbsp;</b><br>
+                    Jack Pacino &nbsp;&nbsp;
+                    <br><b>Nickname: &nbsp;</b><br>
+                    "Jacky"
+                </div>
+
+                <div class="suspectpic">
+                    <img src="./Images/jack.jpg" alt="guilty jack russell" title="Jack Pacino" width=320 height=350 media="(max-width:500px)(mid-width:500px)(min-width:1000px)"/>
+                </div>
+
+                <div class="suspectinfo">
+                    <b>Breed:</b>
+                    Jack Russell
+                    <br><br><b>Charges:</b>
+                    Public Pooping
+                    <br><br><b>Height:</b>
+                    0.8 ft
+                    <br><br><b>Weight:</b>
+                    12 lbs.
+                    <br><br><b>Known Locations:</b>
+                    4th Street
+                    <br><br><b>Reward:</b>
+                    $7,000,000
+                </div>
+
             </article>
-        </section>      <!--end information on second dog-->
-
-        <section>       <!--information on third dog-->
-            <article>
-                <br><br><br><br><h3>Suspect #3</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2">
-                                <img src="/Images/dash.jpg" alt="guilty dashhound" title="Guilty Dashhound" width="250" height="300" id="dash_gotti"/>
-                            </th>
+        </section>      
         
-                            <th colspan="2">
-                                <strong>Dash Gotti</strong><br>
-                                Boss of the Gotti Family<br>
-                                <img src="/Images/FBI_Logo.png" alt="FBI logo" width="300" height="200"/>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>Height: 1.2 ft</th>
-                            <th>Weight: 30 lbs.</th>
-                            <th>Breed:</th>
-                            <th>Dashhound</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>Nickname(s):</th>
-                            <td>"Stubby"</td>
-                            <th>Charges:</th>
-                            <td>Smelling everything</td>
-                        </tr>
-                        <tr>
-                            <th>Known Locations:</th>
-                            <td>The dump</td>
-                            <th>Reward:</th>
-                            <td>$5,000,000</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <section id="part6"> <!--Dog suspect 3-->        
+            <article class="suspects">
+
+                <div class="suspectname">
+                    <b>Name: &nbsp;</b><br>
+                    Dash Gotti &nbsp;&nbsp;
+                    <br><b>Nickname: &nbsp;</b><br>
+                    "Stubby"
+                </div>  
+
+                <div class="suspectpic">
+                    <img src="./Images/dash.jpg" alt="guilty dashhound" title="Dash Gotti" width=320 height=350 media="(max-width:500px)(mid-width:500px)(min-width:1000px)"/>
+                </div>
+            
+                <div class="suspectinfo">
+                    <b>Breed:</b>
+                    Dashhound
+                    <br><br><b>Charges:</b>
+                    Smelling Everything
+                    <br><br><b>Height:</b>
+                    1.2 ft
+                    <br><br><b>Weight:</b>
+                    30 lbs.
+                    <br><br><b>Known Locations:</b>
+                    The Dump
+                    <br><br><b>Reward:</b>
+                    $5,000,000
+                </div>
+
             </article>
-        </section>      <!--end information on third dog-->
+        </section>
+
+        <section id="part7">
+            <p>UPDATED SOON!</p>
+        </section>
     </main>
 
-<br><br><br><br><footer>
-    <p><a href="HomePage.html" class="nohover">Home Page</a> | <a href="GuiltyCats.html" class="nohover">Guilty Cats</a> | <a href="GuiltyDogs.html" class="nohover">Guilty Dogs</a> | <a href="" class="nohover">Contact</a> | <a href="" class="nohover">About</a></p>  
-    <p>Copyright &copy; 2020 Guilty Animals</p>      
-</footer>
+    <section id="part8">
+        <form action="mailto:animals@FBImostwanted.ca" method="POST">
+            <h2 id="form1">Contact Form</h1>
+            Full Name: (required) <input type="text" name="username" maxlength="12" size="30"  required> 
+            <br><br>
+            Email: (required) <input type="email" name="email" size="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <div>ex. animals@FBImostwanted.ca</div><br>
+            Telephone: (required) <input name="telephone number" type="tel" size="30" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"required>
+            <div>ex. 403-123-4567</div><br>
+            <p>Information (required)<p></p>
+            <textarea name="information" rows="10" cols="50" required></textarea><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear" id="reset">
+        </form> 
+    </section><br><br><br>
+
+    <footer> <!--Footer-->
+        <p><a href="HomePage.html" class="nohover">Home Page</a> | <a href="GuiltyCats.html" class="nohover">Guilty Cats</a> | <a href="GuiltyDogs.html" class="nohover">Guilty Dogs</a> | <a href="" class="nohover">Contact</a> | <a href="" class="nohover">About</a></p>  
+        <p>Copyright &copy; 2020 Guilty Animals</p>      
+    </footer>
+    </div>
 
 </body>
 </html>
