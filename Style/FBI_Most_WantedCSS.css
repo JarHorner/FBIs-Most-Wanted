@@ -210,3 +210,37 @@ section p#about::first-letter {
 a[target="_blank"] {
     color: rgb(21, 190, 15);
 }
+
+form div {
+    font-size: 9pt;
+}
+
+form {
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 14pt;
+}
+
+#form1 {
+    font-size: 16pt;
+    background-color:navy;
+}
+
+@media only screen and (max-width:500px) {
+    .suspectpic{
+        width: auto;
+        height: auto;
+    }
+}
+  @media screen and (min-width:500px) {
+    .suspectpic{
+        width: auto;
+        height: auto;
+    }
+}
+  @media screen and (min-width:1000px) {
+    .suspectpic{
+        width:auto;
+        height:auto;
+    }
+  }
