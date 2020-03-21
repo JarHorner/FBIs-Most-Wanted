@@ -147,7 +147,7 @@
         </section>
 
         <section id="part7">
-            <p>UPDATED SOON!</p>
+            <h1>UPDATED SOON!</h1>
         </section>
     </main>
 
@@ -155,14 +155,21 @@
         <form action="mailto:animals@FBImostwanted.ca" method="POST">
             <fieldset>
                 <legend><h2 id="form1">Contact Form</h1></legend>
-                Full Name: (required) <input type="text" name="username" maxlength="12" size="30"  required> 
-                <br><br>
-                Email: (required) <input type="email" name="email" size="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+
+                <label for="name">Full Name: (required)</label> 
+                <input type="text" name="username" maxlength="12" size="30" id="name"  required><br><br>
+
+                <label for="email">Email: (required)</label> 
+                <input type="email" name="email" size="30" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                 <div>ex. animals@FBImostwanted.ca</div><br>
-                Telephone: (required) <input name="telephone number" type="tel" size="30" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"required>
+
+                <label for="phonenumber">Telephone: (required)</label> 
+                <input name="telephone number" type="tel" size="30" id="phonenumber" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"required>
                 <div>ex. 403-123-4567</div><br>
-                <p>Information (required)</p>
-                <textarea name="information" rows="10" cols="50" required></textarea><br>
+
+                <label for="information"><p>Information (required)</p></label>
+                <textarea name="information" rows="10" cols="50" id="information" required></textarea><br>
+
                 <span>
                     <input type="submit" value="Submit">
                     <input type="reset" value="Clear" id="reset">
@@ -172,7 +179,7 @@
     </section><br><br><br>
 
     <footer>
-        <p><a href="HomePage.html" class="nohover">Home Page</a> | <a href="GuiltyCats.html" class="nohover">Guilty Cats</a> | <a href="GuiltyDogs.html" class="nohover">Guilty Dogs</a> | <a href="" class="nohover">Contact</a> | <a href="" class="nohover">About</a></p>        
+        <p><a href="HomePage.html">Home Page</a> | <a href="GuiltyCats.html">Guilty Cats</a> | <a href="GuiltyDogs.html">Guilty Dogs</a> | <a href="">Contact</a> | <a href="">About</a></p>        
         <p><em>Copyright &copy; 2020 FBI Most Wanted</em></p>
     </footer>
     </div>

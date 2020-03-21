@@ -165,23 +165,34 @@
         </section>
 
         <section id="part7">
-            <p>UPDATED SOON!</p>
+            <h1>UPDATED SOON!</h1>
         </section>
     </main>
 
     <section id="part8">
         <form action="mailto:animals@FBImostwanted.ca" method="POST">
-            <h2 id="form1">Contact Form</h1>
-            Full Name: (required) <input type="text" name="username" maxlength="12" size="30"  required> 
-            <br><br>
-            Email: (required) <input type="email" name="email" size="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-            <div>ex. animals@FBImostwanted.ca</div><br>
-            Telephone: (required) <input name="telephone number" type="tel" size="30" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"required>
-            <div>ex. 403-123-4567</div><br>
-            <p>Information (required)<p></p>
-            <textarea name="information" rows="10" cols="50" required></textarea><br>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Clear" id="reset">
+            <fieldset>
+                <legend><h2 id="form1">Contact Form</h1></legend>
+
+                <label for="name">Full Name: (required)</label> 
+                <input type="text" name="username" maxlength="12" size="30" id="name"  required><br><br>
+
+                <label for="email">Email: (required)</label> 
+                <input type="email" name="email" size="30" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <div>ex. animals@FBImostwanted.ca</div><br>
+
+                <label for="phonenumber">Telephone: (required)</label> 
+                <input name="telephone number" type="tel" size="30" id="phonenumber" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"required>
+                <div>ex. 403-123-4567</div><br>
+
+                <label for="information"><p>Information (required)</p></label>
+                <textarea name="information" rows="10" cols="50" id="information" required></textarea><br>
+
+                <span>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear" id="reset">
+                </span>
+            </fieldset>
         </form> 
     </section><br><br><br>
 
