@@ -209,8 +209,8 @@ form {
 }
 
 #form1 {
+    color: black;
     font-size: 16pt;
-    background-color:#041d6e;
     display: flex;
     justify-content: center;
     align-items: center;
