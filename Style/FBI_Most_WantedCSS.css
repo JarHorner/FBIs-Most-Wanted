@@ -143,21 +143,14 @@ li a {
 }
 
 h1 {
+    color: yellow;
     font-size: 3em;
 }
 
 h2 {
-    font-size: 16pt;
-}
-
-h3 {
     font-size: 30pt;
     color: black;
     text-decoration: underline;
-}
-
-header h1, h2 {
-    color: yellow;
 }
 
 nav div a {
@@ -168,8 +161,12 @@ a:visited {
     color: white;
 }
 
+a:link {
+    color: #B3EFFF;
+}
+
 a:active {
-    color: black;
+    color: white;
 }
 
 footer p {
@@ -218,6 +215,10 @@ form {
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid #041d6e;
+}
+
+#part7 h1 {
+    color: black;
 }
 
 #part8 {
