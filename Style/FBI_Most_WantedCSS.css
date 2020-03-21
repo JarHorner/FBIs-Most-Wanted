@@ -25,19 +25,19 @@ body {
 #part4 {
     grid-row-start: 4;
     margin: 50px 0px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #041d6e;
 }
 
 #part5 {
     grid-row-start: 5;
     margin: 50px 0px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #041d6e;
 }
 
 #part6 {
     grid-row-start: 6;
     margin: 50px 0px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #041d6e;
 }
 
 * {
@@ -47,6 +47,7 @@ body {
 #about {
     font-size: 13pt;
     text-align: center;
+    color: yellow;
 }
 
 header {
@@ -96,7 +97,7 @@ header img {
     margin-top: -2em;
     grid-gap: 2em;
     grid-template-rows: auto auto 1fr;
-    background-color: rgb(164, 165, 165);
+    background-color: #575757;
 }
 
 .title {
@@ -172,7 +173,7 @@ nav div a {
 }
 
 a:visited {
-    color: rgb(83, 10, 83);
+    color: white;
 }
 
 a:link {
@@ -196,7 +197,7 @@ header {
 }
 
 footer {
-    background-color: rgb(164, 165, 165);
+    background-color: #575757;
     border-top: 2pt solid #041d6e;
 }
 
@@ -216,11 +217,6 @@ footer {
     background-color: #3e8e41;
 }
 
-section p#about::first-letter {
-    font-size: 20pt;
-    color: #041d6e;
-}
-
 form div {
     font-size: 10pt;
 }
@@ -234,7 +230,7 @@ form {
 
 #form1 {
     font-size: 16pt;
-    background-color:navy;
+    background-color:#041d6e;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -246,13 +242,28 @@ form {
     justify-content: center;
     align-items: center;
     font-size: 3em;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #041d6e;
 }
 
 #part8 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hidden {
+    font-size: 1.2em;
+    top: -500px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.hidden:focus {
+    color: yellow;
+    top: 60px;
+    right:100px;
+    overflow: initial;
+    z-index: 1;
 }
 
 @media screen and (min-width: 901px) {
@@ -272,28 +283,28 @@ form {
         grid-row: 1;
         grid-column: 1;
         margin: 25px 5px;
-        border-right: 2px solid black;
+        border-right: 2px solid #041d6e;
     }
 
     #part5 {
         grid-row: 1;
         grid-column: 2;
         margin: 25px 5px;
-        border-left: 2px solid black;
+        border-left: 2px solid #041d6e;
     }
 
     #part6 {
         grid-row: 2;
         grid-column: 1;
         margin: 25px 5px;
-        border-right: 2px solid black;
+        border-right: 2px solid #041d6e;
     }
 
     #part7 {
         grid-row: 2;
         grid-column: 2;
         margin: 25px 5px;
-        border-left: 2px solid black;
+        border-left: 2px solid #041d6e;
     }
 
     #resize {
@@ -314,28 +325,28 @@ form {
         grid-row: 1;
         grid-column: 1;
         margin: 25px 5px;
-        border-right: 2px solid black;
+        border-right: 2px solid #041d6e;
     }
 
     #part5 {
         grid-row: 1;
         grid-column: 2;
         margin: 25px 5px;
-        border-left: 2px solid black;
+        border-left: 2px solid #041d6e;
     }
 
     #part6 {
         grid-row: 2;
         grid-column: 1;
         margin: 25px 5px;
-        border-right: 2px solid black;
+        border-right: 2px solid #041d6e;
     }
 
     #part7 {
         grid-row: 2;
         grid-column: 2;
         margin: 25px 5px;
-        border-left: 2px solid black;
+        border-left: 2px solid #041d6e;
     }
 
     #resize {
