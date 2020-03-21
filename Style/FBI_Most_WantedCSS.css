@@ -302,7 +302,7 @@ form {
     }
 }
 
-@media screen and (min-width: 401px) and (max-width: 960px) {
+@media screen and (min-width: 551px) and (max-width: 960px) {
 
     .suspectpic{
         width: auto;
@@ -344,7 +344,7 @@ form {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
     .suspectpic{
         width: auto;
         height: auto;
