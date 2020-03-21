@@ -63,34 +63,26 @@ header img {
     margin: 0.8em;
 }
 
-.dropdown-button {
-    background-color: lightgrey;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.dropdown {
-    margin-right: auto;
-    padding: 1em;
+li {
+    float: left;
+    font-size: 1.5em;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: lightgrey;
-    min-width: 150px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+li a {
     display: block;
-} 
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
 
 .information {
     display: grid;
@@ -205,18 +197,6 @@ footer {
     opacity: 1;
 }
 
-.dropdown-content a:hover {
-    background-color: darkgrey;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-
 form div {
     font-size: 10pt;
 }
@@ -225,7 +205,7 @@ form {
     border: 1px solid black;
     padding: 15px;
     font-size: 14pt;
-    background-color: rgb(164, 165, 165);
+    background-color: rgb(165, 165, 165);
 }
 
 #form1 {
@@ -251,17 +231,41 @@ form {
     align-items: center;
 }
 
+span input {
+    cursor: pointer;
+}
+
+input:hover, input:focus {
+    outline: 2px solid blue;
+}
+
+textarea:hover, textarea:hover {
+    outline: 2px solid blue;
+}
+
+span input:focus {
+    text-decoration: underline;
+    background: lightblue;
+}
+
 .hidden {
-    font-size: 1.2em;
+    font-size: 1em;
     top: -500px;
     position: absolute;
     overflow: hidden;
 }
 
+li a:focus, li a:hover {
+    border: 2px solid yellow;
+    background-color: lightblue;
+    color: black;
+}
+
 .hidden:focus {
-    color: yellow;
-    top: 60px;
-    right:100px;
+    color: white;
+    outline: 2px solid yellow;
+    top: 20px;
+    float: left;
     overflow: initial;
     z-index: 1;
 }
